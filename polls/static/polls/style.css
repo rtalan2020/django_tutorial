@@ -1,0 +1,7 @@
+li a {
+    color: green;
+}
+li a:hover{
+    color:rgb(216, 144, 49)
+}
+
