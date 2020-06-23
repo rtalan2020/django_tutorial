@@ -33,11 +33,28 @@ polls/
 
 This directory structure will house the poll application.
 
+modify the views.py
+create urls.py in the poll directory do the necessary changes for the path in the urlspatterns
+in the mysite directory modify the urls.py urlpatterns
+
+
 ******************************************************************************
 https://docs.djangoproject.com/en/3.0/intro/tutorial02/
 ******************************************************************************
 
 While you’re editing mysite/settings.py, set TIME_ZONE to your time zone.
 
+
+$ python manage.py migrate
+
+create a model
+add
+   INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
+
+ python manage.py makemigrations polls
+
+
+$ python manage.py sqlmigrate polls 0001    otherwise : python manage.py migrate
 
 $ python manage.py migrate
